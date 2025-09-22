@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
@@ -134,43 +134,70 @@
 </section>
 
 <section class="hr-feedback">
-        <div class="container-text">
-            <h2>Our Happy Client Say About Us</h2>
-            <div class="stars"></div>
+    <div class="container-text">
+        <h2>Our Happy Client Say About Us</h2>
+        <div class="stars"><p><span class="star-color">★★★★★</span>4.8/5 rating</p></div>
+    </div>
+
+    <div id="line-top" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="container-img"><img src="img/gettyimages-1705503967-612x612.jpg" alt=""></div>
+                </li>
+                <li class="splide__slide">
+                    <div class="container-text">
+                        <img src="img/company_logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span>Leslie Alexander</span>
+                        <p>Head of HR</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="container-img"><img src="img/gettyimages-1354898581-612x612.jpg" alt=""></div>
+                </li>
+                <li class="splide__slide">
+                    <div class="container-text">
+                        <img src="img/company_logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span>Emerson Bergeron</span>
+                        <p>Administrative Manager</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="line-top ">
-            <div class="container-img"><img src="img/gettyimages-1705503967-612x612.jpg" alt=""></div>
-            <div class="container-text">
-                <img src="img/company_logo.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>Lorem ipsum.</span>
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="container-img"><img src="img/gettyimages-1705503967-612x612.jpg" alt=""></div>
-            <div class="container-text">
-                <img src="img/company_logo.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>Lorem ipsum.</span>
-                <p>Lorem ipsum dolor.</p>
-            </div>
+    </div>
+
+    <div id="line-bottom" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="container-img"><img src="img/gettyimages-1358218624-612x612.jpg" alt=""></div>
+                </li>
+                <li class="splide__slide">
+                    <div class="container-text">
+                        <img src="img/company_logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span>Simon Mayer</span>
+                        <p>Managment Associate</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="container-img"><img src="img/gettyimages-1626853870-612x612.jpg" alt=""></div>
+                </li>
+                <li class="splide__slide">
+                    <div class="container-text">
+                        <img src="img/company_logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <span>Lena Carlier</span>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="line-bottom">
-            <div class="container-img"><img src="img/gettyimages-1705503967-612x612.jpg" alt=""></div>
-            <div class="container-text">
-                <img src="img/company_logo.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>Lorem ipsum.</span>
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="container-img"><img src="img/gettyimages-1705503967-612x612.jpg" alt=""></div>
-            <div class="container-text">
-                <img src="img/company_logo.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <span>Lorem ipsum.</span>
-                <p>Lorem ipsum dolor.</p>
-            </div>
-        </div>
+    </div>
 </section>
+
 
 <section class="hr-plan wrapper">
     <h2>Transform Your HR Strategy with Our Affordable Pricing Plans</h2>
@@ -264,45 +291,54 @@
 </body>
 
 <script>
+    new Splide('#line-top', {
+        type   : 'loop',
+        drag   : 'free',
+        perPage: 4,
+        gap    : '5rem',
+        arrows : false,
+        pagination: false,
+        autoScroll: {
+            speed: 0.6,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+        },
+    }).mount(window.splide.Extensions);
+
+    new Splide('#line-bottom', {
+        type   : 'loop',
+        drag   : 'free',
+        perPage: 4,
+        gap    : '5rem',
+        arrows : false,
+        pagination: false,
+        direction: 'rtl',
+        autoScroll: {
+            speed: 0.6,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+        },
+    }).mount(window.splide.Extensions);
+</script>
+
+
+
+<script>
     const burger = document.getElementById("burger");
     const nav = document.getElementById("nav");
+
     burger.addEventListener("click", () => {
         nav.classList.toggle("active");
         burger.classList.toggle("active");
     });
 
+    // Выпадающие меню
     document.querySelectorAll(".dropdown > a").forEach(drop => {
         drop.addEventListener("click", (e) => {
             e.preventDefault();
             drop.parentElement.classList.toggle("open");
         });
     });
-
-
-    $(document).ready(function() {
-        function animateLine($line, speed, direction) {
-            const $first = $line.children().first();
-            const width = $first.outerWidth(true);
-
-            $line.animate({
-                scrollLeft: direction === 'left' ? width : -width
-            }, speed, 'linear', function() {
-                if (direction === 'left') {
-                    $first.appendTo($line);
-                } else {
-                    $line.children().last().prependTo($line);
-                }
-                $line.scrollLeft(0);
-                animateLine($line, speed, direction);
-            });
-        }
-
-        animateLine($('.line-top'), 3000, 'left');
-        animateLine($('.line-bottom'), 3000, 'right');
-    });
-</script>
-
-<script>
     function scrollToTop() {
         window.scrollTo({
             top: 0,
@@ -312,3 +348,4 @@
 </script>
 
 </html>
+

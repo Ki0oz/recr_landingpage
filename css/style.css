@@ -333,7 +333,7 @@ a {
 .hr-blocks {
     padding: 3rem 1rem;
     border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 3rem;
 }
 .hr-blocks .container {
     display: flex;
@@ -377,30 +377,35 @@ a {
 }
 .hr-feedback .stars {
     margin: 0.5rem 0 2rem;
-    color: #008c6a;
+    width: 100%;
     font-size: 1.2rem;
 }
-.hr-feedback .line-top,
-.hr-feedback .line-bottom {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+.hr-feedback .container-text .stars .star-color{
+    color: #35797b;
+    padding-right: 6px;
     margin-top: 2rem;
+    display: inline-block;
+}
+.hr-feedback #line-top,
+.hr-feedback #line-bottom {
+    margin-top: 4rem;
 }
 .hr-feedback .container-img img {
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 360px;
     border-radius: 12px;
     object-fit: cover;
 }
-.hr-feedback .line-top .container-text,
-.hr-feedback .line-bottom .container-text{
+.hr-feedback #line-top .container-text,
+.hr-feedback #line-bottom .container-text{
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 12px;
     text-align: left;
+    width: 360px;
+    height: 360px;
 }
-.hr-feedback .container-text img {
+.hr-feedback li .container-text img {
     width: auto;
     height: 25px;
     margin-bottom: 0.8rem;
@@ -685,9 +690,10 @@ footer ul li a:hover {
         right: 0;
         background: #fff;
         flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
+        gap: 4rem;
+        padding: 3rem;
         display: none;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     }
     .nav.active {
         display: flex;
