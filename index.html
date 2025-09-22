@@ -21,15 +21,32 @@
 <header class="header wrapper">
     <div class="container">
         <div class="logo"><img src="img/logo_b.png" alt="logo"></div>
-        <nav class="nav">
+
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav" id="nav">
             <a href="#">Home</a>
             <a href="#">About Us</a>
             <a href="#">Service</a>
-            <a href="#">Page</a>
+
+            <div class="dropdown">
+                <a href="#">Page <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="#">Team</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Pricing</a>
+                </div>
+            </div>
         </nav>
+
         <a href="#" class="btn">Contact Us</a>
     </div>
 </header>
+
 
 
 <section class="hero wrapper">
@@ -44,38 +61,38 @@
         <div class="item">
             <h3>Talent Sourcing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quos.</p>
-            <button><a href="" target="_blank">Learn More</a></button>
-            <img src="" alt="">
+            <button><a href="" target="_blank">Learn More <span class="arrow-right">❯</span></a></button>
+            <img src="img/refresh.png" alt="">
         </div>
         <div class="item">
             <h3>Talent Sourcing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quos.</p>
-            <button><a href="" target="_blank">Learn More</a></button>
-            <img src="" alt="">
+            <button><a href="" target="_blank">Learn More <span class="arrow-right">❯</span></a></button>
+            <img src="img/users.png" alt="">
         </div>
         <div class="item">
             <h3>Talent Sourcing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quos.</p>
-            <button><a href="" target="_blank">Learn More</a></button>
-            <img src="" alt="">
+            <button><a href="" target="_blank">Learn More <span class="arrow-right">❯</span></a></button>
+            <img src="img/chart-histogram.png" alt="">
         </div>
         <div class="item">
             <h3>Talent Sourcing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quos.</p>
-            <button><a href="" target="_blank">Learn More</a></button>
-            <img src="" alt="">
+            <button><a href="" target="_blank">Learn More <span class="arrow-right">❯</span></a></button>
+            <img src="img/chart-histogram.png" alt="">
         </div>
         <div class="item">
             <h3>Talent Sourcing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quos.</p>
-            <button><a href="" target="_blank">Learn More</a></button>
-            <img src="" alt="">
+            <button><a href="" target="_blank">Learn More <span class="arrow-right">❯</span></a></button>
+            <img src="img/refresh.png" alt="">
         </div>
         <div class="item">
             <h3>Talent Sourcing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quos.</p>
-            <button><a href="" target="_blank">Learn More</a></button>
-            <img src="" alt="">
+            <button><a href="" target="_blank">Learn More <span class="arrow-right">❯</span></a></button>
+            <img src="img/users.png" alt="">
         </div>
     </div>
 </section>
@@ -93,21 +110,21 @@
 <section class="hr-blocks wrapper">
     <div class="container">
         <div class="block">
-            <div class="img"></div>
+            <img class="img"  src="img/check.png" alt="">
             <div class="container-text">
                 <h3>Expert Guidance</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam impedit ipsam quo!</p>
             </div>
         </div>
         <div class="block">
-            <div class="img"></div>
+            <img class="img"  src="img/check.png" alt="">
             <div class="container-text">
                 <h3>Expert Guidance</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam impedit ipsam quo!</p>
             </div>
         </div>
         <div class="block">
-            <div class="img"></div>
+            <img class="img"  src="img/check.png" alt="">
             <div class="container-text">
                 <h3>Expert Guidance</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam impedit ipsam quo!</p>
@@ -166,21 +183,21 @@
             <button><a href="" target="_blank">Get Started</a></button>
         </div>
         <div class="plan">
-            <h3>Basic Plan</h3>
+            <h3>Premium Plan</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam ipsum maiores.</p>
-            <p><span>$23</span>/per month</p>
+            <p><span>$49</span>/per month</p>
             <button><a href="" target="_blank">Get Started</a></button>
         </div>
         <div class="plan">
-            <h3>Basic Plan</h3>
+            <h3>Enterprise Plan</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam ipsum maiores.</p>
-            <p><span>$23</span>/per month</p>
+            <p><span>$137</span>/per month</p>
             <button><a href="" target="_blank">Get Started</a></button>
         </div>
         <div class="plan">
-            <h3>Basic Plan</h3>
+            <h3>Ultimate Plan</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ipsam ipsum maiores.</p>
-            <p><span>$23</span>/per month</p>
+            <p><span>Custom Quote</span></p>
             <button><a href="" target="_blank">Get Started</a></button>
         </div>
     </div>
@@ -189,7 +206,7 @@
 <section class="cta-banner wrapper">
     <h2>Elevate Your Recruitment Process With Us</h2>
     <p>Transform the way vou hire and manage vour emolovees with our innovative. colutions Ioin now and sep the difference forvourcelf</p>
-    <button><a href="" target="_blank">Contact Us Now</a></button>
+    <button><a href="#" target="_blank">Contact Us Now</a></button>
 </section>
 
 <footer>
@@ -197,10 +214,10 @@
         <div class="footer-logo">
             <img src="img/logo_w.png" alt="logo">
             <div class="socials">
-                <a href="#"><i class="linkedin"></i></a>
-                <a href="#"><i class="facebook"></i></a>
-                <a href="#"><i class="twitter"></i></a>
-                <a href="#"><i class="youtube"></i></a>
+                <a href="#"><i class="linkedin"><img src="img/linkedin.png" alt=""></i></a>
+                <a href="#"><i class="facebook"><img src="img/facebook-app-symbol.png" alt=""></i></a>
+                <a href="#"><i class="twitter"><img src="img/twitter.png" alt=""></i></a>
+                <a href="#"><i class="instagram"><img src="img/instagram.png" alt=""></i></a>
             </div>
         </div>
 
@@ -227,23 +244,41 @@
 
             <div class="newsletter">
                 <h4>Subscribe to our newsletter</h4>
-                <form>
+                <form class="newsletter-form">
                     <input type="email" placeholder="Your Email Address" required>
                     <button type="submit">Subscribe</button>
                 </form>
                 <div class="contact-info">
-                    <p><strong>Call Us:</strong> +62 (385) 5025004</p>
-                    <p><strong>Email Us:</strong> contact@domain.com</p>
+                    <p><strong>Call Us:</strong> <br>+62 (385) 5025004</p>
+                    <p><strong>Email Us:</strong> <br>contact@domain.com</p>
                 </div>
             </div>
         </div>
-
+        <div class="footer-bottom">
+            <p>© 2025 Your Company. All rights reserved.</p>
+            <a href="#" class="back-to-top" onclick="scrollToTop()">Back to top</a>
+        </div>
     </div>
 </footer>
 
 </body>
 
 <script>
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("nav");
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        burger.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".dropdown > a").forEach(drop => {
+        drop.addEventListener("click", (e) => {
+            e.preventDefault();
+            drop.parentElement.classList.toggle("open");
+        });
+    });
+
+
     $(document).ready(function() {
         function animateLine($line, speed, direction) {
             const $first = $line.children().first();
@@ -265,6 +300,15 @@
         animateLine($('.line-top'), 3000, 'left');
         animateLine($('.line-bottom'), 3000, 'right');
     });
-
 </script>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>
+
 </html>
