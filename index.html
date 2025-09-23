@@ -295,7 +295,7 @@
         type   : 'loop',
         drag   : 'free',
         perPage: 4,
-        gap    : '5rem',
+        gap    : '2rem',
         arrows : false,
         pagination: false,
         autoScroll: {
@@ -303,13 +303,17 @@
             pauseOnHover: false,
             pauseOnFocus: false,
         },
+        breakpoints: {
+            1024: { perPage: 2, gap: '1rem' },
+            768: { perPage: 1, gap: '1rem' }
+        }
     }).mount(window.splide.Extensions);
 
     new Splide('#line-bottom', {
         type   : 'loop',
         drag   : 'free',
         perPage: 4,
-        gap    : '5rem',
+        gap    : '2rem',
         arrows : false,
         pagination: false,
         direction: 'rtl',
@@ -318,7 +322,12 @@
             pauseOnHover: false,
             pauseOnFocus: false,
         },
+        breakpoints: {
+            1024: { perPage: 2, gap: '1rem' },
+            768: { perPage: 1, gap: '1rem' }
+        }
     }).mount(window.splide.Extensions);
+
 </script>
 
 
@@ -332,7 +341,6 @@
         burger.classList.toggle("active");
     });
 
-    // Выпадающие меню
     document.querySelectorAll(".dropdown > a").forEach(drop => {
         drop.addEventListener("click", (e) => {
             e.preventDefault();

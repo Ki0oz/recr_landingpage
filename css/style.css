@@ -368,8 +368,8 @@ a {
 /* === FEEDBACK SECTION === */
 .hr-feedback {
     background: #e9fbea;
-    padding: 5rem 1rem;
     text-align: center;
+    padding: 3rem 0;
 }
 .hr-feedback h2 {
     font-size: 2rem;
@@ -391,19 +391,28 @@ a {
     margin-top: 4rem;
 }
 .hr-feedback .container-img img {
-    width: 360px;
+    width: 100%;
     height: 360px;
+    max-width: 360px;
+    max-height: 360px;
     border-radius: 12px;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
+
 .hr-feedback #line-top .container-text,
-.hr-feedback #line-bottom .container-text{
+.hr-feedback #line-bottom .container-text {
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 12px;
     text-align: left;
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     height: 360px;
+    min-height: 260px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .hr-feedback li .container-text img {
     width: auto;
