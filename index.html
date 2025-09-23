@@ -34,7 +34,7 @@
             <a href="#">Service</a>
 
             <div class="dropdown">
-                <a href="#">Page <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">Page <span class="arrow">❯</span></a>
                 <div class="dropdown-menu">
                     <a href="#">Team</a>
                     <a href="#">FAQ</a>
@@ -112,15 +112,15 @@
         <div class="block">
             <img class="img"  src="img/check.png" alt="">
             <div class="container-text">
-                <h3>Expert Guidance</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam impedit ipsam quo!</p>
+                <h3>Customizable Solutions</h3>
+                <p>Customizable HR solutions that meet the specific needs business</p>
             </div>
         </div>
         <div class="block">
             <img class="img"  src="img/check.png" alt="">
             <div class="container-text">
-                <h3>Expert Guidance</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam impedit ipsam quo!</p>
+                <h3>Streamlined Processes</h3>
+                <p>Streamlined HR processes that increase efficiency and productivity</p>
             </div>
         </div>
         <div class="block">
@@ -148,7 +148,7 @@
                 <li class="splide__slide">
                     <div class="container-text">
                         <img src="img/company_logo.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aspernatur distinctio earum eos ipsa maiores nam! Ea labore, repudiandae.</p>
                         <span>Leslie Alexander</span>
                         <p>Head of HR</p>
                     </div>
@@ -159,7 +159,7 @@
                 <li class="splide__slide">
                     <div class="container-text">
                         <img src="img/company_logo.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores hic laboriosam molestiae odio officia, rem.</p>
                         <span>Emerson Bergeron</span>
                         <p>Administrative Manager</p>
                     </div>
@@ -177,7 +177,7 @@
                 <li class="splide__slide">
                     <div class="container-text">
                         <img src="img/company_logo.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores illum incidunt quae quaerat, vero? Accusantium delectus dolore eligendi eos, officia repudiandae ut voluptates!</p>
                         <span>Simon Mayer</span>
                         <p>Managment Associate</p>
                     </div>
@@ -188,7 +188,7 @@
                 <li class="splide__slide">
                     <div class="container-text">
                         <img src="img/company_logo.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quasi, temporibus.</p>
                         <span>Lena Carlier</span>
                         <p>Chief Executive Officer</p>
                     </div>
@@ -283,7 +283,7 @@
         </div>
         <div class="footer-bottom">
             <p>© 2025 Your Company. All rights reserved.</p>
-            <a href="#" class="back-to-top" onclick="scrollToTop()">Back to top</a>
+            <a href="#" class="scroll-top">Back to top</a>
         </div>
     </div>
 </footer>
@@ -294,7 +294,7 @@
     new Splide('#line-top', {
         type   : 'loop',
         drag   : 'free',
-        perPage: 4,
+        perPage: 7,
         gap    : '2rem',
         arrows : false,
         pagination: false,
@@ -304,15 +304,18 @@
             pauseOnFocus: false,
         },
         breakpoints: {
-            1024: { perPage: 2, gap: '1rem' },
-            768: { perPage: 1, gap: '1rem' }
+            2400: { perPage: 6, gap: '1rem'},
+            1920: { perPage: 5, gap: '1rem'},
+            1600: { perPage: 4, gap: '1rem'},
+            1024: { perPage: 3, gap: '1rem' },
+            870: { perPage: 2, gap: '1rem' }
         }
     }).mount(window.splide.Extensions);
 
     new Splide('#line-bottom', {
         type   : 'loop',
         drag   : 'free',
-        perPage: 4,
+        perPage: 7,
         gap    : '2rem',
         arrows : false,
         pagination: false,
@@ -323,8 +326,11 @@
             pauseOnFocus: false,
         },
         breakpoints: {
-            1024: { perPage: 2, gap: '1rem' },
-            768: { perPage: 1, gap: '1rem' }
+            2400: { perPage: 6, gap: '1rem'},
+            1920: { perPage: 5, gap: '1rem'},
+            1600: { perPage: 4, gap: '1rem'},
+            1024: { perPage: 3, gap: '1rem' },
+            870: { perPage: 2, gap: '1rem' }
         }
     }).mount(window.splide.Extensions);
 
@@ -347,12 +353,18 @@
             drop.parentElement.classList.toggle("open");
         });
     });
-    function scrollToTop() {
+
+    function scrollToTop(event) {
+        event.preventDefault();
         window.scrollTo({
             top: 0,
-            behavior: "smooth"
+            behavior: 'smooth'
         });
     }
+
+    const scrollBtn = document.querySelector('.scroll-top');
+
+    scrollBtn.addEventListener('click', scrollToTop);
 </script>
 
 </html>
