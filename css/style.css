@@ -691,6 +691,10 @@ footer ul li a:hover {
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
 
+    .hr-service .item {
+        height: 320px;
+    }
+
     .hr-strategy img {
         max-width: 350px;
         height: max-content;
@@ -745,6 +749,10 @@ footer ul li a:hover {
 
     .hr-service .container {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .hr-service .item {
+        height: 270px;
     }
 
     .hr-strategy img,
